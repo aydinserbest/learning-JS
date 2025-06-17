@@ -14,6 +14,7 @@ All examples are organized in the `examples/` folder and loaded via a single `in
 ```
 learning-JS/
 ├── index.html                      # HTML file to load and test snippets
+├── loveScore.html                 # UI-based love score calculator (HTML)
 └── examples/                       # JavaScript example files
     ├── bmiCalculator.js
     ├── capitalizeFunction.js
@@ -36,6 +37,9 @@ learning-JS/
     ├── tweetLengthChecker.js
     ├── validatedDogAgeCalculator.js
     ├── validatedSumOfTwoNumbers.js
+    ├── loveScoreWithNumberGeneration.js
+    ├── numberGeneration.js
+    
 ```
 
 ---
@@ -109,6 +113,15 @@ function capitalize(name) {
 }
 const input = prompt("What is your name?");
 alert("Hello, " + capitalize(input));
+```
+
+---
+
+### `numberGeneration.js`
+
+```js
+var n = Math.floor(Math.random() * 6) + 1;
+console.log(n); // → 1 to 6 (like a dice roll)
 ```
 
 ---
