@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Love Score Calculator ❤️</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💘 Love Score Calculator 💘</h1>
+
+  <input type="text" id="firstName" placeholder="Enter first name">
+  <input type="text" id="secondName" placeholder="Enter second name">
+  <br>
+  <button onclick="calculateLove()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateLove() {
+      var firstName = document.getElementById("firstName").value.trim();
+      var secondName = document.getElementById("secondName").value.trim();
+
+      if (firstName === "" || secondName === "") {
+        alert("Please enter both names.");
+        return;
+      }
+
+      var percentageScore = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("result").innerText =
+        "The love score between " + firstName + " and " + secondName + " is " + percentageScore + "% ❤️";
+    }
+  </script>
+
+</body>
+</html>
