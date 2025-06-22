@@ -54,7 +54,9 @@ learning-JS/
 - Functions with parameters and return values  
 - Object return patterns  
 - Input validation using `isNaN()`  
-- Use of `Math.floor()`, `Math.pow()` and other built-in methods  
+- Use of `Math.floor()`, `Math.pow()`, and other built-in methods  
+- **Random number generation with `Math.random()`**  
+- **Building interactive HTML + JavaScript projects (e.g., love score calculator)**    
 
 ---
 
